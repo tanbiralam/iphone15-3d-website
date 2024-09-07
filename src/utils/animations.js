@@ -1,4 +1,4 @@
-export const animateWithGSAPTimeline = (
+export const animateWithGsapTimeline = (
   timeline,
   rotationRef,
   rotationState,
@@ -8,7 +8,7 @@ export const animateWithGSAPTimeline = (
 ) => {
   timeline.to(rotationRef.current.rotation, {
     y: rotationState,
-    duartion: 1,
+    duration: 1,
     ease: "power2.inOut",
   });
 
@@ -20,6 +20,7 @@ export const animateWithGSAPTimeline = (
     },
     "<"
   );
+
   timeline.to(
     secondTarget,
     {
