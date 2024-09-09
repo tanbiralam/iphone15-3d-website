@@ -13,7 +13,7 @@
     "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.112.0",
     "@react-three/fiber": "^8.17.6",
-    "@sentry/react": "^8.28.0",
+    "@sentry/react": "^8.29.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-tailwindcss": "^3.17.4",
