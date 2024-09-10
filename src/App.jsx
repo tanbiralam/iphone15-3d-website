@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Highlights from "./components/Highlights";
 import Model from "./components/Model";
 import Features from "./components/Features";
+import Process from "./components/Process";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Highlights />
       <Model />
       <Features />
+      <Process />
+      <Footer />
     </main>
   );
 }
