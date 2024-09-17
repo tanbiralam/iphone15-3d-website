@@ -6,9 +6,7 @@ import {
 } from "@react-three/drei";
 
 import * as THREE from "three";
-import Lights from "./Lights";
-import Loader from "./Loader";
-import IPhone from "./IPhone";
+import {Lights,Loader,IPhone} from "../components";
 import { Suspense } from "react";
 
 const ModelView = ({

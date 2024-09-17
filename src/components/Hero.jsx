@@ -4,10 +4,12 @@ import { useGSAP } from "@gsap/react";
 import { heroVideo, smallHeroVideo } from "../utils";
 
 const Hero = () => {
+  // State to manage video source based on screen width
   const [videoSrc, setVideoSrc] = useState(
     window.innerWidth < 760 ? smallHeroVideo : heroVideo
   );
 
+  // Function to update video source on window resize
   const handleVideoSrcSet = () => {
     if (window.innerWidth < 640) {
       setVideoSrc(smallHeroVideo);
@@ -16,6 +18,7 @@ const Hero = () => {
     }
   };
 
+  // Effect to add and remove resize event listener
   useEffect(() => {
     window.addEventListener("resize", handleVideoSrcSet);
 
@@ -24,6 +27,7 @@ const Hero = () => {
     };
   }, []);
 
+  // GSAP animations for hero title and CTA
   useGSAP(() => {
     gsap.to("#hero", {
       opacity: 2,
@@ -39,9 +43,11 @@ const Hero = () => {
   return (
     <section className="nav-height relative w-full bg-black">
       <div className="flex-center h-5/6 w-full flex-col">
+        {/* Hero title */}
         <p id="hero" className="hero-title">
           iPhone 15 Pro
         </p>
+        {/* Video container */}
         <div className="w-9/12 md:w-10/12">
           <video
             className="pointer-events-none"
@@ -55,6 +61,7 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* CTA section */}
       <div
         id="cta"
         className="flex translate-y-20 flex-col items-center opacity-0"
