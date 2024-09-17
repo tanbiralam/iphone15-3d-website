@@ -64,7 +64,3 @@ For a full list of dependencies, please refer to the `package.json` file.
 ## Contributing
 
 Contributions are welcome. Please open an issue or submit a pull request for any improvements or bug fixes.
-
-## License
-
-[MIT License](LICENSE)
